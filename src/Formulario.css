@@ -45,8 +45,8 @@ h1, h2 {
   height: 100vh;
   box-sizing: border-box;
   position: fixed;
-  left: 22%;
-  top: 0;
+  left: 18%;
+  top: 15%;
   overflow-y: auto;
   text-align: left;
   box-shadow: var(--shadow);
