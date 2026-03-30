@@ -27,7 +27,7 @@ const citas = [
 function Cita() {
   return (
     <div>
-        <h1>Administrá tus citas</h1>
+        <h1 class= "titulo">Administrá tus citas</h1>
       {citas.map((cita) => (
         <div className="cita" key={cita.mascota}>
           <p>Mascota: {cita.mascota}</p>
