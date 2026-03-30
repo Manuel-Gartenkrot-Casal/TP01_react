@@ -1,20 +1,47 @@
 import './Cita.css'
-function Cita(){
-    return (
-<div className="one-half column">
-  <h2>Administra tus citas</h2>
 
-  <div className="cita">
-    <p>Mascota: <span>Nina</span></p>
-    <p>Dueño: <span>Martin</span></p>
-    <p>Fecha: <span>2021-08-05</span></p>
-    <p>Hora: <span>08:20</span></p>
-    <p>Sintomas: <span>Le duele la pierna</span></p>
-    <button className="button eliminar u-full-width">Eliminar ×</button>
-  </div>
+const citas = [
+  {
+    mascota: "Nina",
+    dueno: "Martin",
+    fecha: "2021-08-05",
+    hora: "08:20",
+    sintomas: "Le duele la pierna"
+  },
+  {
+    mascota: "Sifon",
+    dueno: "Flecha",
+    fecha: "2023-08-05",
+    hora: "09:24",
+    sintomas: "Duerme mucho"
+  },
+  {
+    mascota: "Floki",
+    dueno: "Ari",
+    fecha: "2023-08-05",
+    hora: "16:15",
+    sintomas: "No está comiendo"
+  }
+];
 
-  
-</div>
-    )
+function Cita() {
+  return (
+    <div>
+      <h1>Lista de Citas</h1>
+
+      {citas.map((cita) => (
+        <div className="cita" key={cita.mascota}>
+          <p>Mascota: {cita.mascota}</p>
+          <p>Dueño: {cita.dueno}</p>
+          <p>Fecha: {cita.fecha}</p>
+          <p>Hora: {cita.hora}</p>
+          <p>Síntomas: {cita.sintomas}</p>
+          <button class="button elimnar u-full-width">Eliminar ×</button>
+        </div>
+      ))}
+
+    </div>
+  );
 }
-  export default Cita;
+
+export default Cita;
