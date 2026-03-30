@@ -5,12 +5,14 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Formulario from './Formulario.jsx'
 import Cita from './Cita.jsx'
+import Buscador from './Buscador.jsx'
 
 function App(){
   return(
     <>
       <Formulario />
-        <Cita />
+      <Cita />
+      <Buscador/>
     </>
   )
 }
