@@ -1,6 +1,6 @@
 .cita {
-  width: calc(40% - 48px);
-  margin-left: 50%;
+  width: calc(30% - 48px);
+  margin-left: 55%;
   padding: 2rem;
   background: #ffffff;
   border-bottom: 1px solid #e1e1e1;
@@ -37,8 +37,6 @@
 .button.eliminar:hover,
 .button.elimnar,
 .button.elimnar:hover {
-  background-color: #c10059;
-  color: #ffffff;
   margin-top: 2rem;
   border: none;
   padding: 10px 12px;
@@ -48,6 +46,7 @@
   display: inline-block;
   width: 100%;
   box-shadow: 0 8px 20px rgba(193, 0, 89, 0.12);
+  border:1px solid #797979 ;
 }
 
 @media (max-width: 1024px) {

@@ -8,7 +8,6 @@
   --text: #111827;
   --text-contrast: #08060d;
   --accent: #aa3bff;
-  --shadow: rgba(0,0,0,0.06) 0 6px 18px;
   --radius: 8px;
   --gap: 12px;
   --min-form-width: 320px;
@@ -40,25 +39,20 @@ h1, h2 {
 }
 
 .formulario {
-  width: 50vw;
+  width: 30vw;
   max-width: 50%;
   min-width: var(--min-form-width);
   height: 100vh;
-  padding: 32px;
   box-sizing: border-box;
   position: fixed;
-  left: 0;
+  left: 22%;
   top: 0;
   overflow-y: auto;
-  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));
-  border-right: 1px solid var(--panel-border);
   text-align: left;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
 
 .formulario label {
