@@ -1,10 +1,51 @@
 :root{
   --bg: #ffffff;
   --panel: rgba(255,255,255,0.95);
-  --accent: #2b6ef6;
+  --accent: #FF0066;
+  --accent-2: #A445B2;
+  --accent-3: #D41872;
   --text: #111827;
   --muted: #6b7280;
   --shadow: 0 -6px 24px rgba(15,23,42,0.08);
+  --border: rgba(15,23,42,0.06);
+  --glass: rgba(255,255,255,0.12);
+  --radius: 12px;
+  --height: 48px;
+  --gap: 12px;
+  --max-width: 980px;
+  --font-heading: 'Staatliches', cursive;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-image: linear-gradient(-225deg, var(--accent-2) 0%, var(--accent-3) 52%, var(--accent) 100%);
+  min-height: 100%;
+  padding-bottom: 5rem;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 .visually-hidden{
@@ -34,29 +75,31 @@
 
 .search-form{
   width: 100%;
-  max-width: 980px;
+  max-width: var(--max-width);
   display: flex;
-  gap: 12px;
+  gap: var(--gap);
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
-  background: var(--panel);
-  border-radius: 12px;
-  border: 1px solid rgba(15,23,42,0.06);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.12));
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
   backdrop-filter: blur(6px);
+  align-items: center;
 }
 
 .search-form input[type="search"]{
   flex: 1 1 auto;
   min-width: 0;
-  height: 48px;
+  height: var(--height);
   padding: 10px 14px;
-  border: 1px solid rgba(15,23,42,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 10px;
   font-size: 16px;
   color: var(--text);
-  background: transparent;
+  background: rgba(255,255,255,0.9);
   outline: none;
+  box-shadow: none;
 }
 
 .search-form input[type="search"]::placeholder{
@@ -65,19 +108,28 @@
 
 .search-form button{
   flex: 0 0 auto;
-  height: 48px;
+  height: var(--height);
   padding: 0 18px;
   border: none;
   border-radius: 10px;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-3), var(--accent));
   color: #fff;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(43,110,246,0.18);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-form button:active{
   transform: translateY(1px);
+}
+
+@media (max-width: 1024px){
+  .search-form{
+    max-width: calc(100% - 32px);
+  }
 }
 
 @media (max-width: 640px){

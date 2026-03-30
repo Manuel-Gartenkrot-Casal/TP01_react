@@ -12,7 +12,7 @@ function App(){
     <>
       <Formulario />
       <Cita />
-      <Buscador/>
+      <Buscador />
     </>
   )
 }
