@@ -35,8 +35,16 @@ function App() {
     <>
       <h1>Administrador de pacientes</h1>
 
-      <Formulario />
-<Cita citas={citas} />
+      <div className="container">
+        <div className="row">
+          <div className="one-half column">
+            <Formulario />
+          </div>
+          <div className="one-half column">
+            <Cita citas={citas} />
+          </div>
+        </div>
+      </div>
       <Buscador />
     </>
   )
