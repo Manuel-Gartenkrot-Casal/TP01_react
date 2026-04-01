@@ -3,9 +3,14 @@
     width: 30%;
     margin-left: 53%;
 }
+
+.lista-citas {
+    margin-top: 8%;
+}
+
 .cita {
-  width: calc(30% - 48px);
-  margin-left: 55%;
+  width: calc(28% - 48px);
+  margin-left: 52%;
   padding: 2rem;
   background: #ffffff;
   border-bottom: 1px solid #e1e1e1;

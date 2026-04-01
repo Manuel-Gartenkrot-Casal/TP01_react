@@ -5,7 +5,6 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Formulario from './Formulario.jsx'
 import Cita from './Cita.jsx'
-import Buscador from './Buscador.jsx'
 
 function App() {
   const [citas] = useState([
@@ -45,7 +44,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Buscador />
     </>
   )
 }
