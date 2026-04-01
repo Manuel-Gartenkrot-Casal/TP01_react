@@ -1,13 +1,8 @@
 
 .titulo {
     width: 30%;
-    margin-left: 53%;
+    margin-left: 49%;
 }
-
-.lista-citas {
-    margin-top: 8%;
-}
-
 .cita {
   width: calc(28% - 48px);
   margin-left: 52%;
