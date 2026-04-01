@@ -1,4 +1,5 @@
 import './Formulario.css'
+import TituloFormulario from './TituloFormulario.jsx'
 const campos = [
   {
     label: "Nombre Mascota",
@@ -31,9 +32,8 @@ const campos = [
 function Formulario() {
   return (
     <div className="formulario">
-      <h1>Crear mi Cita</h1>
       <form>
-
+        <TituloFormulario/>
         {campos.map((campo) => (
           <div className="campo" key={campo.name}>
             <label>{campo.label}</label>
@@ -53,12 +53,7 @@ function Formulario() {
           </div>
         ))}
 
-        <button
-          type="submit"
-          className="u-full-width button-primary"
-        >
-          Agregar Cita
-        </button>
+        <button type="submit" className="u-full-width button-primary">Agregar Cita</button>
 
       </form>
     </div>

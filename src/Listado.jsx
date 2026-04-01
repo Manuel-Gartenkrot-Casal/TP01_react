@@ -1,8 +1,10 @@
-import './Citas.jsx'
+import Citas from './Citas.jsx'
 
 function Listado(){
     return(
+        <>
         <Citas />
+        </>
     )
 }
 
