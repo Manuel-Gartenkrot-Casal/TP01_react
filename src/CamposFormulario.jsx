@@ -1,17 +1,16 @@
 const CamposFormulario = ({ label, name, type, placeholder }) => {
-  const esSintomas = name === "sintomas";
   return (
     <div className="campo">
       <label>{label}</label>
 
-      {esSintomas && (
+      {name === "sintomas" && (
         <textarea 
           name={name} 
           className="u-full-width" 
         />
       )}
 
-      {!esSintomas && (
+      {name !== "sintomas" && (
         <input
           type={type}
           name={name}
