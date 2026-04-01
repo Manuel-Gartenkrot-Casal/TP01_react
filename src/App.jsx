@@ -10,6 +10,7 @@ import Buscador from './Buscador.jsx'
 function App(){
   return(
     <>
+      <h1>Administrador de pacientes</h1>
       <Formulario />
       <Cita />
       <Buscador />

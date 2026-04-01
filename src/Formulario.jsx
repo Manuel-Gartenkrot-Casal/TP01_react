@@ -31,6 +31,7 @@ const campos = [
 function Formulario() {
   return (
     <div className="formulario">
+      <h1>Crear mi Cita</h1>
       <form>
 
         {campos.map((campo) => (
